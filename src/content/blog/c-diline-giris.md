@@ -2,7 +2,7 @@
 title: "C Programlama: Mühendisliğin Temeline İlk Adım"
 description: "Neden C dili ile başladım? Yazılım dünyasına giriş tecrübelerim."
 pubDate: "Feb 20 2026"
-heroImage: "/blog-placeholder-2.jpg"
+heroImage: "/c-blog-kapak.jpg"
 ---
 
 Bir bilgisayar mühendisi adayı olarak, yazılım dünyasına en dipten, yani donanıma en yakın dillerden biri olan **C dili** ile başlama kararı aldım. Birçok kişi modern dillerle başlamayı önerse de, sistemin mantığını anlamak için C'nin en iyi dil olduğunu düşünüyorum.
