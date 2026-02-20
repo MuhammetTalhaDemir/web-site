@@ -1,43 +1,70 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 3em 1em;
+			}
+			h1 {
+				color: rgb(var(--black));
+			}
+			.intro-text {
+				font-size: 1.2rem;
+				line-height: 1.6;
+			}
+			.social-links {
+				display: flex;
+				gap: 1rem;
+				margin-top: 2rem;
+			}
+			.social-button {
+				padding: 0.5rem 1rem;
+				border-radius: 8px;
+				background: #f4f4f4;
+				text-decoration: none;
+				color: #333;
+				font-weight: bold;
+				transition: background 0.3s ease;
+			}
+			.social-button:hover {
+				background: #e2e2e2;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>Muhammet Talha Demir</h1>
-			<p>
-				Erciyes Üniversitesi Bilgisayar Mühendisliği Öğrencisi | Oyun Geliştirme Meraklısı
+			<h1>Merhaba, Ben Muhammet Talha Demir 👋</h1>
+			<p class="intro-text">
+				Erciyes Üniversitesi'nde <strong>Bilgisayar Mühendisliği</strong> öğrencisiyim. 
+				Teknolojiye olan tutkum, 1.5 yıllık <strong>gönüllü oyun testerlığı</strong> tecrübem ve 
+				155.000'den fazla izlenmeye ulaşan <strong>YouTube</strong> içerik üreticiliği yolculuğumla şekilleniyor.
 			</p>
-			<p>
-				"1.5 yıldır gönüllü oyun testerlığı yapıyorum ve şu an Unity/C# dünyasına adım atıyorum. Ayrıca 155 binden fazla izlenmeye sahip bir YouTube kanalım var."
+			<p class="intro-text">
+				Şu an C programlama dili üzerinde temellerimi güçlendirirken, bir yandan da <strong>Unity ve C#</strong> 
+				kullanarak oyun geliştirme dünyasında projeler üretmeyi hedefliyorum.
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+
+			<section>
+				<h2>🔗 İletişim & Sosyal Medya</h2>
+				<p>Bana aşağıdaki kanallardan ulaşabilir veya projelerimi takip edebilirsiniz:</p>
+				<div class="social-links">
+					<a href="mailto:iletisim@muhammettalhademir.com" class="social-button">📧 E-posta</a>
+					<a href="https://github.com/MuhammetTalhaDemir" target="_blank" class="social-button">🐙 GitHub</a>
+					<a href="https://www.linkedin.com/in/muhammettalhademir" target="_blank" class="social-button">💼 LinkedIn</a>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
