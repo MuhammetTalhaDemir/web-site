@@ -7,7 +7,7 @@ heroImage: "./hangi-manifest-kizisin.jpeg"
 
 Merhaba, Size **C dilinin** temellerini öğrenirken geliştirdiğim **Hangi Manifest Kızısın Testi** projemi tanıtmak istiyorum.
 
-Bu proje, C dilini öğrenme maceramı eğlenceli bir hale getirdi.
+Bu proje, C dilini öğrenme maceramı eğlenceli bir hale getirdi. Öğrenmeye devam ettikçe projeyi geliştirmeye devam edeceğim. Geliştirme aşamasında olduğu için eksik yanları fazla. Final sürümünde sizi gerçek bir test karşılayacak.
 
 ## 💡 Projenin Amacı ve Hikayesi
 Kullanıcılara Onedio tarzı sorular yönelterek, verdikleri cevapların ağırlığına göre Manifest grubunun hangi üyesinin karakter tipine daha yakın olduklarını hesaplayan interaktif bir terminal uygulaması geliştirdim. 
