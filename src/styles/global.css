@@ -20,6 +20,15 @@
 :root.dark code {
 	background-color: #222939;
 }
+@media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+        --black: 229, 233, 240;      
+        --gray-dark: 200, 210, 230;  
+        --gray-light: 31, 35, 45;    
+        --gray-gradient: to bottom, #151219, #0f1219; 
+        --accent: #5c7cff; 
+    }
+}
 @font-face {
 	font-family: "Atkinson";
 	src: url("/fonts/atkinson-regular.woff") format("woff");
