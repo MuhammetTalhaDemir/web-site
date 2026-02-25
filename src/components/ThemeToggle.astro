@@ -1,43 +1,29 @@
 <button id="themeToggle" class="theme-button" aria-label="Tema Değiştir" type="button">
-    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="sun" ...>...</svg>
+    <svg class="moon" ...>...</svg>
 </button>
 
-<style>
-    .theme-button {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        color: rgb(var(--black));
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        z-index: 100; /* Diğer elemanların altında kalmasın */
-    }
-    :root.dark .sun { display: block; }
-    :root.dark .moon { display: none; }
-    :root:not(.dark) .sun { display: none; }
-    :root:not(.dark) .moon { display: block; }
-</style>
-
 <script is:inline>
-  const initTheme = () => {
-    const btn = document.querySelector('#themeToggle');
+  const toggleTheme = () => {
+    const html = document.documentElement;
+    const isDark = html.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
     
-    if (btn) {
-      console.log("Mühendislik Raporu: Buton bulundu, tıklama dinleyicisi ekleniyor.");
-      btn.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        console.log("Tema değişti:", isDark ? "Karanlık" : "Aydınlık");
-      });
+    // ZORLA RENK DEĞİŞTİRME (CSS Değişkenlerini beklemiyoruz)
+    if (isDark) {
+      html.style.backgroundColor = "#1f232d";
+      document.body.style.backgroundColor = "#1f232d";
+      document.body.style.color = "#c8d2e6";
     } else {
-      console.error("Mühendislik Hatası: Buton DOM üzerinde bulunamadı!");
+      html.style.backgroundColor = "#e5e9f0";
+      document.body.style.backgroundColor = "#e5e9f0";
+      document.body.style.color = "#222939";
     }
+    console.log("Mühendislik Raporu: Tema zorla değiştirildi. Yeni:", isDark ? "Dark" : "Light");
   };
 
-  // Astro sayfa yaşam döngüsü için 3'lü koruma
-  initTheme();
-  document.addEventListener('astro:after-swap', initTheme);
-  document.addEventListener('astro:page-load', initTheme);
+  document.getElementById('themeToggle').onclick = toggleTheme;
+  document.addEventListener('astro:after-swap', () => {
+    document.getElementById('themeToggle').onclick = toggleTheme;
+  });
 </script>
