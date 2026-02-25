@@ -5,7 +5,7 @@
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--gray-gradient: to bottom, rgba(229, 233, 240, 0.5), #ffffff;
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
 		rgba(var(--gray), 33%);
@@ -13,8 +13,8 @@
 :root.dark {
 	--black: 229, 233, 240;     
 	--gray-dark: 200, 210, 230;  
-	--gray-light: 34, 41, 57;    
-	--gray-gradient: #151219, #0f1219; 
+	--gray-light: 31, 35, 45;    
+	--gray-gradient: to bottom, #151219, #0f1219; 
 	--accent: #5c7cff;           
 }
 :root.dark code {
