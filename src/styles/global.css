@@ -11,7 +11,8 @@
 		rgba(var(--gray), 33%);
 }
 html.dark,
-:root.dark {
+:root.dark,
+html[class*="dark"] {
 	--black: 229, 233, 240;     
 	--gray-dark: 200, 210, 230;  
 	--gray-light: 31, 35, 45;    
@@ -49,13 +50,13 @@ body {
     margin: 0;
     padding: 0;
     text-align: left;
-    background-color: rgb(var(--gray-light)); 
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    background-attachment: fixed; 
+    background-color: rgb(var(--gray-light)) !important; 
+    background: linear-gradient(var(--gray-gradient)) no-repeat !important;
+    background-attachment: fixed !important; 
     
     word-wrap: break-word;
     overflow-wrap: break-word;
-    color: rgb(var(--gray-dark));
+    color: rgb(var(--gray-dark)) !important;
     font-size: 20px;
     line-height: 1.7;
     min-height: 100vh; 
