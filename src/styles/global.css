@@ -1,9 +1,3 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -15,6 +9,16 @@
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px
 		rgba(var(--gray), 33%);
+}
+:root.dark {
+	--black: 229, 233, 240;     
+	--gray-dark: 200, 210, 230;  
+	--gray-light: 34, 41, 57;    
+	--gray-gradient: #151219, #0f1219; 
+	--accent: #5c7cff;           
+}
+:root.dark code {
+	background-color: #222939;
 }
 @font-face {
 	font-family: "Atkinson";
