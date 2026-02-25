@@ -20,10 +20,10 @@
 </style>
 
 <script is:inline>
-  function attachEvent() {
-    const toggle = document.getElementById('themeToggle');
+  function applyThemeToggle() {
+    const toggle = document.getElementById("themeToggle");
     if (toggle) {
-      toggle.addEventListener('click', () => {
+      toggle.addEventListener("click", () => {
         const element = document.documentElement;
         element.classList.toggle("dark");
         const isDark = element.classList.contains("dark");
@@ -31,6 +31,11 @@
       });
     }
   }
-  attachEvent();
-  document.addEventListener('astro:after-swap', attachEvent);
+
+  // 1. Sayfa ilk açıldığında çalıştır
+  applyThemeToggle();
+
+  document.addEventListener("astro:after-swap", applyThemeToggle);
+
+  document.addEventListener("astro:page-load", applyThemeToggle);
 </script>
