@@ -1,29 +1,29 @@
-<button id="themeToggle" class="theme-button" aria-label="Tema Değiştir" type="button">
-    <svg class="sun" ...>...</svg>
-    <svg class="moon" ...>...</svg>
+<button id="themeToggle" class="theme-btn" aria-label="Tema Değiştir">
+    <svg class="sun-icon" ...>/* Güneş SVG */</svg>
+    <svg class="moon-icon" ...>/* Ay SVG */</svg>
 </button>
 
-<script is:inline>
-  const toggleTheme = () => {
-    const html = document.documentElement;
-    const isDark = html.classList.toggle('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    
-    // ZORLA RENK DEĞİŞTİRME (CSS Değişkenlerini beklemiyoruz)
-    if (isDark) {
-      html.style.backgroundColor = "#1f232d";
-      document.body.style.backgroundColor = "#1f232d";
-      document.body.style.color = "#c8d2e6";
-    } else {
-      html.style.backgroundColor = "#e5e9f0";
-      document.body.style.backgroundColor = "#e5e9f0";
-      document.body.style.color = "#222939";
+<style>
+    .theme-btn {
+        background: transparent;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: rgb(var(--black)); /* İkon rengini değişkenden alır */
     }
-    console.log("Mühendislik Raporu: Tema zorla değiştirildi. Yeni:", isDark ? "Dark" : "Light");
-  };
 
-  document.getElementById('themeToggle').onclick = toggleTheme;
-  document.addEventListener('astro:after-swap', () => {
-    document.getElementById('themeToggle').onclick = toggleTheme;
-  });
-</script>
+    /* İkonların görünürlüğü */
+    :root.dark .sun-icon { display: block; }
+    :root.dark .moon-icon { display: none; }
+    :root:not(.dark) .sun-icon { display: none; }
+    :root:not(.dark) .moon-icon { display: block; }
+
+    /* SVG'lerin boyutunu sabitle */
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+    }
+</style>
