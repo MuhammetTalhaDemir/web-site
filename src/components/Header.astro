@@ -95,36 +95,43 @@ import ThemeToggle from './ThemeToggle.astro';
 	
 
 	@media (max-width: 720px) {
-		header {
-			padding: 0 1rem;
-		}
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 0.8rem 0; 
+        gap: 0.5rem; 
+    }
 
-		nav {
-			flex-direction: column; /* Elemanları alt alta diz */
-			height: auto; /* Sabit yüksekliği kaldır ki Header genişleyebilsin */
-			padding: 1.5rem 0;
-			gap: 1.2rem;
-		}
+    
+    .internal-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem; /
+        margin: 0.3rem 0;
+    }
 
-		.internal-links {
-			/* display: none;  <-- BURAYI SİLDİK, YERİNE AŞAĞIDAKİLERİ EKLEDİK */
-			display: flex;
-			justify-content: center;
-			gap: 1.2rem;
-			width: 100%;
-		}
+    
+    .internal-links a {
+        font-size: 1.3rem !important; 
+        font-weight: 600; 
+    }
 
-		.internal-links a {
-			font-size: 0.9rem; /* Mobilde yazıları bir tık küçülttük */
-			padding: 5px 0;
-		}
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        border-top: 1px solid var(--header-border);
+        padding-top: 0.5rem;
+        margin-top: 0.2rem;
+        width: 90%; 
+    }
 
-		.social-links {
-			width: 100%;
-			justify-content: center; /* İkonları ve tema butonunu ortala */
-			border-top: 1px solid rgba(var(--gray), 20%); /* Araya ince bir çizgi */
-			padding-top: 1rem;
-			gap: 1.5rem;
-		}
-	}
+  
+    .site-title {
+        font-size: 1.1rem; 
+        margin-bottom: 0;
+    }
+}
+
 </style>
