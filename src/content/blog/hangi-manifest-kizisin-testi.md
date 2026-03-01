@@ -16,10 +16,16 @@ Kullanıcılara Onedio tarzı sorular yönelterek, verdikleri cevapların ağır
 Proje basit görünse de, arka planda C dilinin en kritik yapılarını verimli kullanmayı hedefledim:
 
 * **Dil:** C
-* **Kullanılan Yapılar:** `if-else`, `switch-case`, `do-while`, `functions`
-* **Dinamik Karar Mekanizmaları:** Karmaşık bir puanlama algoritması için karar yapılarını optimize ettim.
-* **Modüler Programlama:** Kodu tek bir dev dosya yerine, işlevlerine göre ayrılmış modüler fonksiyonlara taşıdım.
-* **Gelişim Süreci:** Projenin Git geçmişinde görüleceği üzere, kod temel mantıktan profesyonel fonksiyonel yapıya kadar evrilmiştir.
+* **Kütüphaneler:** `<stdio.h>`, `<windows.h>`
+* **IDE/Derleyici:** Visual Studio Code, GCC veya MSVC.
+* **Modüler Tasarım:** Fonksiyon bazlı mimari kullanılarak `main` fonksiyonu sadeleştirilmiş ve her görev (soru sorma, puan hesaplama) ayrı fonksiyonlara atanmıştır.
+* **Döngü Yönetimi:** `do-while` mekanizması ile sonsuz döngü ve kullanıcı kontrollü çıkış.
+* **Score Algorithm:** Puanlama sistemi, 6 farklı karakter değişkeni ve karşılaştırmalı `max_puan` mantığı üzerine kurulmuştur.
+* **Hafıza Kullanımı:** Statik bellek yönetimi tercih edilerek düşük kaynak tüketimi sağlanmıştır.
+
+## 📈 Gelişim Süreci
+Projenin bu blogdan sonraki gelişmelerine (devlog) aşağıdaki bloglardan inceleyebilirsiniz:
+-[v0.5](https://muhammettalhademir.com/blog/manifest-v05)
 
 ## 💻 Nasıl Çalıştırılır?
 Eğer siz de hangi üye olduğunuzu bulmak isterseniz:
