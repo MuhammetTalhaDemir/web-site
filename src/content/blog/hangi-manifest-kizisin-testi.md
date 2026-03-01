@@ -25,6 +25,7 @@ Proje basit görünse de, arka planda C dilinin en kritik yapılarını verimli 
 
 ## 📈 Gelişim Süreci
 Projenin bu blogdan sonraki gelişmelerine (devlog) aşağıdaki bloglardan inceleyebilirsiniz:
+
 -[v0.5](https://muhammettalhademir.com/blog/manifest-v05)
 
 ## 💻 Nasıl Çalıştırılır?

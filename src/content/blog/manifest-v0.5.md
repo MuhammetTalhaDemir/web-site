@@ -17,12 +17,11 @@ C dilinin temellerini öğrenirken sıra **Recursion** (Özyineleme) konusuna ge
 - **Buffer Cleaner (Küçük Bir Mühendislik Hilesi):** Projede can sıkan bir Input Buffer problemi vardı. Henüz **Stream Handling** konusuna gelmediğim için bu sorunu `getchar();` ile şimdilik çözdüm.
     
 - **Splash Screen:** Testin girişine, kullanıcıyı ilk saniyeden havaya sokacak devasa bir **ASCII Art** ekledim.
-    
+
+![Manifest v0.5 Terminal Görüntüsü](./manifest-v0.5-terminal.png)   
 
 Bu versiyon benim için bir dönüm noktası oldu. Bir sonraki hedefim; o kalabalık değişkenleri bir kenara bırakıp **Diziler (Arrays)** ile kodun mimarisini baştan aşağı modernize etmek.
 
 📝 **Not:** Bu projenin ne olduğunu, nasıl başladığını ve teknik detaylarını merak ediyorsanız, serinin ilk yazısına [buradan](https://muhammettalhademir.com/blog/hangi-manifest-kizisin-testi/) ulaşabilirsiniz.
 
 👉 [GitHub Repo](https://github.com/MuhammetTalhaDemir/HangiManifestKizisinTesti)
-
-![Manifest v0.5 Terminal Görüntüsü](./manifest-v0.5-terminal.png)
