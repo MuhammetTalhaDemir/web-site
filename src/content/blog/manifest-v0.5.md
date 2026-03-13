@@ -22,6 +22,6 @@ C dilinin temellerini öğrenirken sıra **Recursion** (Özyineleme) konusuna ge
 
 Bu versiyon benim için bir dönüm noktası oldu. Bir sonraki hedefim; o kalabalık değişkenleri bir kenara bırakıp **Diziler (Arrays)** ile kodun mimarisini baştan aşağı modernize etmek.
 
-📝 **Not:** Bu projenin ne olduğunu, nasıl başladığını ve teknik detaylarını merak ediyorsanız, serinin ilk yazısına [buradan](https://muhammettalhademir.com/blog/hangi-manifest-kizisin-testi/) ulaşabilirsiniz.
+📝 **Not:** Bu projenin ne olduğunu, nasıl başladığını ve teknik detaylarını merak ediyorsanız, projenin ana blog yazısına [buradan](https://muhammettalhademir.com/blog/hangi-manifest-kizisin-testi/) ulaşabilirsiniz.
 
 👉 [GitHub Repo](https://github.com/MuhammetTalhaDemir/HangiManifestKizisinTesti)

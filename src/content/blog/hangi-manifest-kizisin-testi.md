@@ -16,7 +16,7 @@ Kullanıcılara Onedio tarzı sorular yönelterek, verdikleri cevapların ağır
 Proje basit görünse de, arka planda C dilinin en kritik yapılarını verimli kullanmayı hedefledim:
 
 * **Dil:** C
-* **Kütüphaneler:** `<stdio.h>`, `<windows.h>` `<string.h>`
+* **Kütüphaneler:** `<stdio.h>`, `<windows.h>`, `<string.h>`
 * **Veri Yapıları:** **Paralel Diziler (Parallel Arrays)** kullanılarak sorular, şıklar ve sonuçlar dinamik olarak yönetilir.
 * **Algoritma Mantığı:** Kullanıcı girdileri ASCII matematiği ile dizi indekslerine dönüştürülür ve "Maximum Search" algoritması ile sonuç hesaplanır
 * **Modüler Tasarım:** Fonksiyon bazlı mimari kullanılarak `main` fonksiyonu sadeleştirilmiş ve her görev (soru sorma, puan hesaplama) ayrı fonksiyonlara atanmıştır.
@@ -34,8 +34,8 @@ Proje basit görünse de, arka planda C dilinin en kritik yapılarını verimli 
 
 **v0.4:** Fonksiyonel Programlama ve Puanlama: Projenin dönüm noktası oldu. `soru_sor` ve `sonucu_goster` gibi fonksiyonlar tanımlayarak modüler kod yapısına geçtim. Her karakter için ayrı puan değişkenleri tanımlayarak basit bir "kişilik testi" algoritmasının temelini attım.
 
--[v0.5 Blog](https://muhammettalhademir.com/blog/manifest-v05)
--[v0.6 Blog](https://muhammettalhademir.com/blog/manifest-v06)
+- [v0.5 Blog](https://muhammettalhademir.com/blog/manifest-v05)
+- [v0.6 Blog](https://muhammettalhademir.com/blog/manifest-v06)
 
 ## 💻 Nasıl Çalıştırılır?
 Eğer siz de hangi üye olduğunuzu bulmak isterseniz:
