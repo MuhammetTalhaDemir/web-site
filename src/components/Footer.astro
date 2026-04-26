@@ -18,11 +18,12 @@ const today = new Date();
 
 <style>
 	footer {
-		padding: 2em 1em;
-		background: transparent;
-		color: rgb(var(--gray));;
-		border-top: 1px solid rgb(var(--gray-light));
-		margin-top: 3em;
+		padding: 1rem 1rem; /* Boyu kısaltmak için padding'i düşürdük */
+		background: rgb(var(--gray-light)); /* Header ile aynı renk yaptık */
+		color: rgb(var(--black));
+		border-top: 1px solid rgba(var(--gray), 20%); /* Daha ince bir çizgi */
+		margin-top: 1.5em; /* Sayfa ile arasındaki boşluğu azalttık */
+		transition: background-color 0.3s ease;
 	}
 	.footer-container {
 		display: flex;
@@ -32,6 +33,12 @@ const today = new Date();
 		margin: 0 auto;
 		flex-wrap: wrap;
 		gap: 1em;
+		min-height: 50px; /* İçeriğin çok sıkışmaması için minimum yükseklik */
+	}
+	.copyright {
+		font-size: 0.9em;
+		color: rgb(var(--black)); 
+		opacity: 0.8; /* Yazıyı biraz küçülterek kibarlaştırdık */
 	}
 	.social-links {
 		display: flex;
@@ -40,20 +47,25 @@ const today = new Date();
 	.social-links a {
 		text-decoration: none;
 		color: rgb(var(--gray-dark));
-		font-size: 0.9em;
+		font-size: 0.85em;
 		transition: color 0.2s ease;
 	}
 	.social-links a:hover {
 		color: var(--accent);
-	}
-	.footer-info {
-		font-weight: 500;
 	}
 	
 	@media (max-width: 720px) {
 		.footer-container {
 			flex-direction: column;
 			text-align: center;
+			padding: 0.5rem 0;
+		}
+		footer {
+			padding: 0.8rem 0.5rem; /* Dış boşluğu iyice daralttık */
+			margin-top: 1em;
+		}
+		.copyright {
+			font-size: 0.8em; /* Yazıyı mobilde bir tık daha küçülttük */
 		}
 	}
 </style>
