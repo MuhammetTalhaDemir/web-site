@@ -3,6 +3,7 @@ title: "Hangi Manifest Kızısın Testi v0.6 Güncellemesi"
 description: "v0.6 güncellemesiyle birlikte; paralel diziler ve string yönetimi ile test sistemi güncellendi."
 pubDate: "Mar 13 2026"
 heroImage: "./manifest-v0.6.jpg"
+hidden: true
 ---
 
 v0.6 güncellemesiyle birlikte kodun arka planındaki "if-else" kalabalığına veda ettik ve yerini çok daha profesyonel, ölçeklenebilir bir **Dizi (Array)** mimarisine bıraktık.
@@ -19,6 +20,6 @@ Dıştan aynı test olabilir ama içerisi artık çok daha zeki ve sistematik.
 
 **⚠️ Hâlâ buffer sorunu var** 
 
-📝 **Not:** Bu projenin ne olduğunu, nasıl başladığını ve teknik detaylarını merak ediyorsanız, projenin ana blog yazısına [buradan](https://muhammettalhademir.com/blog/hangi-manifest-kizisin-testi/) ulaşabilirsiniz.
+📝 **Not:** Bu projenin ne olduğunu, nasıl başladığını ve teknik detaylarını merak ediyorsanız, projenin ana blog yazısına [buradan](/blog/hangi-manifest-kizisin-testi/) ulaşabilirsiniz.
 
 👉 [GitHub Repo](https://github.com/MuhammetTalhaDemir/HangiManifestKizisinTesti)

@@ -34,8 +34,10 @@ Proje basit görünse de, arka planda C dilinin en kritik yapılarını verimli 
 
 **v0.4:** Fonksiyonel Programlama ve Puanlama: Projenin dönüm noktası oldu. `soru_sor` ve `sonucu_goster` gibi fonksiyonlar tanımlayarak modüler kod yapısına geçtim. Her karakter için ayrı puan değişkenleri tanımlayarak basit bir "kişilik testi" algoritmasının temelini attım.
 
-- [v0.5 Blog](https://muhammettalhademir.com/blog/manifest-v05)
-- [v0.6 Blog](https://muhammettalhademir.com/blog/manifest-v06)
+- [v0.5 Blog](/blog/manifest-v05/)
+- [v0.6 Blog](/blog/manifest-v06/)
+
+⚠️ *v0.6 sürümü sonrası geliştirmeyi bıraktım maalesef.*
 
 ## 💻 Nasıl Çalıştırılır?
 Eğer siz de hangi üye olduğunuzu bulmak isterseniz:

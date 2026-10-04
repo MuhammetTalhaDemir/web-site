@@ -3,6 +3,7 @@ title: "Hangi Manifest Kızısın Testi v0.5 Güncellemesi"
 description: "v0.5 güncellemesiyle birlikte; test akışına özyinelemeli geri sayım mekanizması eklenmiş, kullanıcı deneyimini artırmak için zamanlama ayarları yapılmış ve terminal arayüzü görsel olarak iyileştirilmiştir."
 pubDate: "Mar 01 2026"
 heroImage: "./manifest-v0.5.jpg"
+hidden: true
 ---
 
 v0.5 Güncellemesiyle projenin çehresini değiştiren birkaç dokunuş yaptım.
@@ -22,6 +23,6 @@ C dilinin temellerini öğrenirken sıra **Recursion** (Özyineleme) konusuna ge
 
 Bu versiyon benim için bir dönüm noktası oldu. Bir sonraki hedefim; o kalabalık değişkenleri bir kenara bırakıp **Diziler (Arrays)** ile kodun mimarisini baştan aşağı modernize etmek.
 
-📝 **Not:** Bu projenin ne olduğunu, nasıl başladığını ve teknik detaylarını merak ediyorsanız, projenin ana blog yazısına [buradan](https://muhammettalhademir.com/blog/hangi-manifest-kizisin-testi/) ulaşabilirsiniz.
+📝 **Not:** Bu projenin ne olduğunu, nasıl başladığını ve teknik detaylarını merak ediyorsanız, projenin ana blog yazısına [buradan](/blog/hangi-manifest-kizisin-testi/) ulaşabilirsiniz.
 
 👉 [GitHub Repo](https://github.com/MuhammetTalhaDemir/HangiManifestKizisinTesti)
