@@ -1,6 +1,6 @@
 ---
 title: "Hangi Manifest Kızısın Testi v0.6 Güncellemesi"
-description: "v0.6 güncellemesiyle birlikte; paralel diziler ve string yönetimi ile test sistemi guncellendi."
+description: "v0.6 güncellemesiyle birlikte; paralel diziler ve string yönetimi ile test sistemi güncellendi."
 pubDate: "Mar 13 2026"
 heroImage: "./manifest-v0.6.jpg"
 ---
