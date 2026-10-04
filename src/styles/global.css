@@ -13,8 +13,8 @@
 html.dark {
 	--black: 229, 233, 240;     
 	--gray-dark: 200, 210, 230;  
-	--gray-light: 31, 35, 45;    
-	--gray-gradient: to bottom, #151219, #0f1219; 
+	--gray-light: 27, 34, 48;    
+	--gray-gradient: to bottom, #0d1119, #080b11; 
 	--accent: #5c7cff;           
 }
 html.dark code {

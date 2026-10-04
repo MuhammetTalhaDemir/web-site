@@ -37,11 +37,24 @@ import ThemeToggle from './ThemeToggle.astro';
 
 <style>
 	header {
+		position: sticky;
+		top: 0;
+		z-index: 100;
 		margin: 0;
 		padding: 0 2rem;
-		background: rgb(var(--gray-light));
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 5%);
-		transition: background-color 0.3s ease;
+		background: rgba(255, 255, 255, 0.72);
+		backdrop-filter: blur(20px) saturate(180%);
+		-webkit-backdrop-filter: blur(20px) saturate(180%);
+		border-bottom: 1px solid rgba(var(--gray), 0.18);
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+		transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+	}
+	:global(html.dark) header {
+		background: rgba(13, 17, 25, 0.8);
+		backdrop-filter: blur(16px) saturate(180%);
+		-webkit-backdrop-filter: blur(16px) saturate(180%);
+		border-bottom: 1px solid rgba(var(--gray), 0.2);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 	}
 	nav {
 		display: flex;
@@ -97,14 +110,16 @@ import ThemeToggle from './ThemeToggle.astro';
 
 	@media (max-width: 720px) {
 		header {
+			position: relative;
 			padding: 0 1rem;
 		}
 
 		nav {
 			flex-direction: column;
 			height: auto;
-			padding: 0.8rem 0;
-			gap: 0.5rem;
+			padding-top: 1.25rem;
+			padding-bottom: 0;
+			gap: 0.35rem;
 		}
 
 		.logo-section a {
@@ -116,22 +131,32 @@ import ThemeToggle from './ThemeToggle.astro';
 			justify-content: center;
 			flex-wrap: wrap;
 			gap: 1.1rem;
-			margin: 0.3rem 0;
+			margin: 0.15rem 0 0.25rem 0;
 		}
 
 		.internal-links a {
 			font-size: 1.15rem !important;
 			font-weight: 600;
+			padding: 6px 0;
 		}
 
 		.social-links {
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			gap: 1.5rem;
 			border-top: 1px solid rgba(var(--gray), 0.2);
-			padding-top: 0.5rem;
-			margin-top: 0.2rem;
+			padding: 0.8rem 0;
+			margin-top: 0.3rem;
 			width: 90%;
+		}
+
+		.social-links :global(.theme-btn) {
+			margin-left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 24px;
 		}
 	}
 

@@ -126,10 +126,18 @@ const latestProjects = projects.slice(0, 3);
 				gap: 1.2rem;
 				padding: 1rem 1.25rem;
 				border-radius: 12px;
-				background: rgba(var(--gray-light), 0.35);
+				background: rgba(var(--gray-light), 0.4);
 				border: 1px solid rgba(var(--gray), 0.18);
 				text-decoration: none;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 				transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+			}
+
+			:global(html.dark) .post-card,
+			:global(html.dark) .project-mini-card {
+				background: rgba(var(--gray-light), 0.6);
+				border: 1px solid rgba(var(--gray), 0.22);
+				box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 			}
 
 			.post-card:hover,
@@ -138,6 +146,12 @@ const latestProjects = projects.slice(0, 3);
 				border-color: var(--accent);
 				background: rgba(var(--gray-light), 0.6);
 				box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+			}
+
+			:global(html.dark) .post-card:hover,
+			:global(html.dark) .project-mini-card:hover {
+				background: rgba(var(--gray-light), 0.85);
+				box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 			}
 
 			.post-card:hover .post-title,

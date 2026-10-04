@@ -18,12 +18,20 @@ const today = new Date();
 
 <style>
 	footer {
-		padding: 1rem 1rem; /* Boyu kısaltmak için padding'i düşürdük */
-		background: rgb(var(--gray-light)); /* Header ile aynı renk yaptık */
+		padding: 1.5rem 1rem;
+		background: rgba(255, 255, 255, 0.6);
+		backdrop-filter: blur(16px) saturate(180%);
+		-webkit-backdrop-filter: blur(16px) saturate(180%);
 		color: rgb(var(--black));
-		border-top: 1px solid rgba(var(--gray), 20%); /* Daha ince bir çizgi */
-		margin-top: 1.5em; /* Sayfa ile arasındaki boşluğu azalttık */
-		transition: background-color 0.3s ease;
+		border-top: 1px solid rgba(var(--gray), 0.18);
+		margin-top: 2.5em;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+	:global(html.dark) footer {
+		background: rgba(13, 17, 25, 0.75);
+		backdrop-filter: blur(16px) saturate(180%);
+		-webkit-backdrop-filter: blur(16px) saturate(180%);
+		border-top: 1px solid rgba(var(--gray), 0.2);
 	}
 	.footer-container {
 		display: flex;

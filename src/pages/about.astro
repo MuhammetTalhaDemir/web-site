@@ -111,11 +111,17 @@ import Layout from '../layouts/BlogPost.astro';
 			margin-top: 0.5rem;
 		}
 		.tech-stack-container {
-			background: rgba(var(--gray-light), 0.35);
+			background: rgba(var(--gray-light), 0.4);
 			border: 1px solid rgba(var(--gray), 0.2);
 			border-radius: 12px;
 			padding: 1.2rem 1.5rem;
 			margin: 1rem 0 1.5rem 0;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+		}
+		:global(html.dark) .tech-stack-container {
+			background: rgba(var(--gray-light), 0.6);
+			border: 1px solid rgba(var(--gray), 0.22);
+			box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 		}
 		.tech-list {
 			list-style-type: none;
